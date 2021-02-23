@@ -14,7 +14,7 @@ namespace Amazon.Models
         public string Title { get; set; }
         public string Author { get; set; }
         public string Publisher { get; set; }
-        //[RegularExpression(@"^\d{2,3}[-]{0,1}\d{11}|\d{9,11}$")]
+        [RegularExpression(@"^\d{2,3}[-]{0,1}\d{11}|\d{9,11}$")]
         public string ISBN { get; set; }
         public string ClassificationCategory { get; set; }
         public double Price { get; set; }
