@@ -2,17 +2,19 @@
     ViewData["Title"] = "Home Page";
 }
 @model IQueryable<Book>
+
 <br />
 <header>
-    <div class="bg-primary text-white text-center">
-        <h1>Amazon Books</h1>
+    <div class="text-center bg-primary text-white" style="position: center">
+        <h1> Amazon Books </h1>
     </div>
-    <br />
 </header>
+<br />
+
 
 @foreach (var x in Model)
 {
-    <div class="text-center float-left" style="width:400px; border:groove; position: center; background-color:antiquewhite">
+    <div class="float-left" style="width:400px; height:auto; border:groove; position: center; background-color:antiquewhite">
         <h5>Title: @x.Title</h5>
         <p>Book ID: @x.BookID</p>
         <p>Author: @x.Author</p>
